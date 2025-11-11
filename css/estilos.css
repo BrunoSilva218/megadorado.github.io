@@ -223,14 +223,6 @@ botoes-contato {
   background-color: #1ebe5b8a;
 }
 
-.botao-contato.salvar {
-  background-color: #04318b;
-  
-}
-
-.botao-contato.salvar:hover {
-  background-color: #0058d29c;
-}
 
 /* Rodapé */
 footer {
