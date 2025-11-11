@@ -1,0 +1,275 @@
+:root {
+    --cor-dourado: #C8A770;
+    --cor-dourado-escuro: #9D8258;
+    --cor-marrom: #42372B;
+    --cor-preto: #1D1813;
+    --cor-fundo: #0E0B09;
+    --fonte-principal: 'Playfair Display', serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-preto);
+    color: var(--cor-dourado);
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-fundo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid var(--cor-dourado-escuro);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 155px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-dourado);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--cor-dourado-escuro);
+}
+
+#cardapio2 {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    border: 2px solid #855810;
+    padding: 10px;
+    margin: 14px;border-radius: 12px;
+
+
+    
+}
+
+#cardapio2 a {
+    font-family: var(--fonte-principal);
+    font-size: 30px;
+    margin: 10px;
+    color: #855810;
+    text-decoration: none;
+}
+
+#cardapio2 a:hover {
+    background-color: rgba(255, 255, 249, 0.37);
+    color: #000000;
+    border-radius: 10px;
+
+    transform: translateY(-6px); /* move o botão suavemente para cima */
+    box-shadow: 0 8px 20px rgba(87, 106, 126, 0.5); /* aumenta a sombra */
+    background: #C8A770; /* muda o tom de azul */
+ }
+
+/* Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('../img/fundo-burguer.jpg') center/cover no-repeat;
+    color: var(--cor-dourado);
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.texto-hero h2 {
+    font-size: 2.5em;
+}
+
+.texto-hero p {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+.botao {
+    background-color: var(--cor-dourado);
+    color: var(--cor-preto);
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: var(--cor-dourado-escuro);
+}
+
+/* Cardápio */
+.cardapio {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.itens-cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.item {
+    background-color: var(--cor-marrom);
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    color: var(--cor-dourado);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+
+    transition: all 0.4s ease;
+}
+
+.item img {
+    width: 120px;
+    border-radius: 10px;
+
+    transition: all 0.4s ease;
+}
+
+.item:hover {
+  transform: scale(1.07); /* aproxima suavemente */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.item:hover img {
+  transform: scale(1.15); /* zoom leve na imagem */
+}
+
+.preco {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--cor-dourado);
+}
+
+/* Sobre */
+.sobre {
+    background-color: var(--cor-marrom);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Contato */
+.contato {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contato a {
+    cursor: pointer;
+    color: #C8A770;
+    text-decoration: none;
+}
+
+.contato a:hover {
+    color: rgb(190, 190, 190);
+}
+
+botoes-contato {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.botao-contato {
+  background-color: #be0851a6;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease; /* Transição suave */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.404);
+}
+
+.botao-contato:hover {
+  transform: translateY(-5px); /* movimento suave */
+  background-color: #bd1e1e;
+  box-shadow: 0 8px 20px rgba(2, 2, 2, 0.562);
+}
+
+.botao-contato.whatsapp {
+  background-color: #08461fce;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.404);
+}
+
+.botao-contato.whatsapp:hover {
+  background-color: #1ebe5b8a;
+}
+
+.botao-contato.salvar {
+  background-color: #04318b;
+  
+}
+
+.botao-contato.salvar:hover {
+  background-color: #0058d29c;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-fundo);
+    text-align: center;
+    padding: 20px;
+    color: var(--cor-dourado-escuro);
+}
+
+footer a {
+    cursor: pointer;
+    color: #C8A770;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(184, 172, 10);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+
+    }
+
+    .itens-cardapio {
+        flex-direction: column;
+    }
+
+    #cardapio2 {
+    display: flex;
+    justify-content: center;
+     }
+}
+
+@media (min-width: 769px) /* regras para telas grandes */{
+    .sobre {
+    font-size: 1em;
+    text-align: center;
+ }
+}
