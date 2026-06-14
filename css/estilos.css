@@ -1,7 +1,7 @@
 :root {
-    --cor-dourado: #C8A770;
-    --cor-dourado-escuro: #9D8258;
-    --cor-marrom: #42372B;
+    --cor-dourado: #d4af37;
+    --cor-dourado-escuro: #83705262;
+    --cor-marrom: #42372b3b;
     --cor-preto: #1D1813;
     --cor-fundo: #0E0B09;
     --fonte-principal: 'Playfair Display', serif;
@@ -84,11 +84,21 @@ nav a:hover {
 
 /* Hero */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                url('../img/fundo-burguer.jpg') center/cover no-repeat;
+
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.925)),
+   
+                url('../img/foto-do-fundo2.jpg') center/cover no-repeat;
+
     color: var(--cor-dourado);
     text-align: center;
     padding: 120px 20px;
+
+      background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+  
+
 }
 
 .texto-hero h2 {
@@ -287,8 +297,10 @@ footer a:hover {
 
    .hero {
     background-attachment: scroll;
-    background-size: cover;
+    background-size:cover ;
     padding: 60px 15px;
+
+   
   }
 
   .texto-hero h2 {
